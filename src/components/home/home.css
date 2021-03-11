@@ -1,0 +1,42 @@
+.container {
+    height: 700px;
+    width: 900px;
+    border: 2px solid black;
+    background-color:white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px lightgray;
+  }
+  
+  .searchContainer {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin: 10px;
+  }
+  
+  .searchInput {
+    font-size: xx-large;
+    width: 600px;
+  }
+  
+  .resultsBox {
+    overflow-y: auto;
+    border: 1px solid black;
+    margin: 10px;
+    height: 600px;
+  }
+
+  .searchButton {
+      color: white;
+      background-color: green;
+      margin-left: 5px;
+      font-size: xx-large
+  }
+
+  .resultCard {
+      margin: 3px;
+      border: 1px ridge black;
+      border-radius: 5px;
+      box-shadow: 1px 1px 1px lightgray;
+      padding: 3px;
+  }
