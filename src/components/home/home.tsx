@@ -38,7 +38,13 @@ export const Home = () => {
   );
 };
 
-const ResultCard = ({title, url, author}: {title: string, url: string, author: string}) => {
+const ResultCard = ({title, url, author, story_text, comment_text}: {title: string, url: string, author: string, story_text: string, comment_text: string }) => {
+    /** Trusting HTML that I didn't write is generally a bad thing.... 
+     * it shouldn't be done because there can be some bad ramifications... 
+     * in this case i'm trusting that the content in this API has already 
+     * been sanitized and is only return trusted content. Hopefully that is the case.
+     **/
+    
     return (
         <div className='resultCard'>
             <h3><label>Title: { title }</label></h3>
@@ -46,6 +52,21 @@ const ResultCard = ({title, url, author}: {title: string, url: string, author: s
                 <li><label>Author: { author }</label></li>
                 <li><label>URL: <a href={url}>{ url }</a> </label></li>
             </ul>
+            {
+                story_text && (
+                    <label>Story:
+                    <p dangerouslySetInnerHTML={{ __html: story_text}}></p>
+                    </label>
+                )
+            }
+
+            {
+                comment_text && (
+                    <label>Comment:
+                    <p dangerouslySetInnerHTML={{ __html: comment_text }}></p>
+                    </label>
+                )
+            }
         </div>
     )
 }
