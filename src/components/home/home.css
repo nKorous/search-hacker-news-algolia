@@ -6,31 +6,38 @@
     border-radius: 5px;
     box-shadow: 3px 3px 3px lightgray;
   }
+
+  .headerContainer {
+    font-size: xx-large;
+    text-align: center;
+  }
   
   .searchContainer {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 60px;
     margin: 10px;
   }
   
   .searchInput {
-    font-size: xx-large;
+    font-size: x-large;
     width: 600px;
+    margin-left: 3px;
   }
   
   .resultsBox {
     overflow-y: auto;
     border: 1px solid black;
     margin: 10px;
-    height: 600px;
+    height: 575px;
   }
 
   .searchButton {
       color: white;
       background-color: green;
       margin-left: 5px;
-      font-size: xx-large
+      font-size: x-large
   }
 
   .resultCard {
