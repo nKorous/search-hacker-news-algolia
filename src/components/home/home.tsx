@@ -45,7 +45,7 @@ const ResultCard = ({ title, url, author, story_text, comment_text }: { title: s
   /** Trusting HTML that I didn't write is generally a bad thing....
    * it shouldn't be done because there can be some bad ramifications...
    * in this case i'm trusting that the content in this API has already
-   * been sanitized and is only return trusted content. Hopefully that is the case.
+   * been sanitized and is only returning trusted content. Hopefully that is the case.
    **/
 
   return (
